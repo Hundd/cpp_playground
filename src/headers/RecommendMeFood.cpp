@@ -1,4 +1,5 @@
 #include "RecommendMeFood.h"
+#include <iostream>
 
 const char *RecommendMeFood(char firstLetter)
 {
@@ -10,4 +11,9 @@ const char *RecommendMeFood(char firstLetter)
         return "Chocolate cake";
 
     return "Pizza";
+}
+
+void GetPizzaRecipe()
+{
+    std::cout << "To make pizza you need..." << std::endl;
 }
