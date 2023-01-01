@@ -31,4 +31,18 @@ int main()
     Teacher *jack = new Teacher("Jack", "School", 50, "History");
     jack->PrepareLesson();
     jack->AskForPromotion();
+
+    std::cout << std::endl;
+    jack->Work();
+    maxim->Work();
+
+    std::cout << std::endl;
+
+    Employee *e1 = maxim;
+    Employee *e2 = jack;
+    Employee *e3 = &ivan;
+
+    e1->Work();
+    e2->Work();
+    e3->Work();
 }

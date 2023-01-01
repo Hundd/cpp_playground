@@ -74,6 +74,11 @@ public:
         else
             std::cout << Name << ", sorry, NO promotion for you!" << std::endl;
     }
+
+    virtual void Work()
+    {
+        std::cout << Name << " is checking emails, task backlog, performing tasks..." << std::endl;
+    }
 };
 
 class Developer : public Employee
@@ -90,6 +95,11 @@ public:
     {
         std::cout << getName() << " is fixing bug." << std::endl;
     }
+
+    void Work()
+    {
+        std::cout << Name << "is writing " << FavoriteProgrammingLanguage << " code." << std::endl;
+    }
 };
 
 class Teacher : public Employee
@@ -105,5 +115,10 @@ public:
     void PrepareLesson()
     {
         std::cout << Name << " is preparing " << Subject << " lesson" << std::endl;
+    }
+
+    void Work()
+    {
+        std::cout << Name << " is teaching " << Subject << "." << std::endl;
     }
 };
