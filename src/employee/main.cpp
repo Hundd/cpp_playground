@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "./Employee.cpp"
+#include "Employee.h"
 using std::string;
 
 int main()
